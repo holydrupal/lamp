@@ -2,6 +2,7 @@ FROM ubuntu:12.04
 MAINTAINER Aaron Krieshok <akrieshok@gmail.com>
 
 ADD ./lamp.sh /lamp.sh
+RUN chmod 755 /lamp.sh
 RUN /lamp.sh
 RUN rm -f /lamp.sh
 
